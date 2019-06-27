@@ -1,1 +1,1 @@
-require('./build/singleton/main.js');
+require('./build/adapter/main.js');
