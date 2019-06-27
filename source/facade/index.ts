@@ -1,14 +1,7 @@
-import { IDiscount, IShipping, IFees } from "./interfaces"
+import { IDiscount, IShipping, IFees, IShopFacade } from "./interfaces"
 
-class ShopFacade {
-    discount: IDiscount;
-    shipping: IShipping;
-    fees: IFees;
-    constructor() {
-        this.discount = new Discount();
-        this.shipping = new Shipping();
-        this.fees = new Fees();
-    }
+class ShopFacade implements IShopFacade {
+    constructor(public discount = new Discount(), public shipping = new Shipping(), public fees = new Fees() ) {}
 
     calc(price: number) {
         price = this.discount.calc(price);

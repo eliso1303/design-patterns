@@ -1,6 +1,6 @@
 export interface ISoldier {
     level: number;
-    attack() : number
+    attack(): number
 }
 export interface IJadi {
     level: number;

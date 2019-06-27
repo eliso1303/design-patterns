@@ -9,3 +9,9 @@ export interface IShipping {
 export interface IFees {
     calc(value: number): number;
 }
+
+export interface IShopFacade {
+    discount: IDiscount;
+    shipping: IShipping;
+    fees: IFees;
+}

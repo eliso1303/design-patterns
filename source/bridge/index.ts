@@ -1,7 +1,8 @@
 import { InkType, IPrinter, IInk } from "./interfaces"
 
-class Printer implements IPrinter {
+abstract class Printer implements IPrinter {
     constructor(public ink: IInk) { }
+    abstract print(): string;
 }
 
 class EpsonPrinter extends Printer {
@@ -24,7 +25,7 @@ class HPprinter extends Printer {
     }
 }
 
-class Ink implements IInk {
+abstract class Ink implements IInk {
     constructor(public type: InkType) { }
 
     get() {

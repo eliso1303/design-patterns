@@ -1,10 +1,10 @@
-import IPerson, { InstanceType } from "./interfaces"
+import { InstanceType } from "./interfaces"
 
-// class Person implements IPerson {
 class Person {
     static instance: InstanceType;
     constructor() {
-        if (typeof Person.instance === 'object') {
+        // do we have it or not
+        if (Person.instance) {
             return Person.instance;
         }
         Person.instance = this;

@@ -1,5 +1,9 @@
 export interface Isheep {
     name: string;
     weight: number;
-    clone(): Isheep;
+    clone(): Iclone;
+}
+
+export interface Iclone {
+    clone: () => Isheep; 
 }

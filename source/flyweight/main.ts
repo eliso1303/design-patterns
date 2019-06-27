@@ -1,3 +1,1 @@
-// import { colorFactory } from "./index"
-
-// let color = new colorFactory();
+import { colorFactory } from "./index"

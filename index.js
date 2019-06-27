@@ -1,1 +1,1 @@
-require('./build/proxy/main.js');
+require('./build/prototype/main.js');

@@ -2,14 +2,7 @@ import { IRequest } from "./interfaces"
 import { IRequestBuilder } from "./interfaces"
 
 class Request implements IRequest {
-    url: string;
-    method: string;
-    payload: {};
-    constructor() {
-        this.url = '';
-        this.method = '';
-        this.payload = {};
-    }
+    constructor(public url ='', public method ='', public payload = {}) { }
 }
 
 class RequestBuilder implements IRequestBuilder {
