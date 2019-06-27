@@ -25,7 +25,7 @@ class HPprinter extends Printer {
 }
 
 class Ink implements IInk {
-    constructor(public type: InkType) {}
+    constructor(public type: InkType) { }
 
     get() {
         return this.type;
