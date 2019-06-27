@@ -1,1 +1,1 @@
-require('./build/adapter/main.js');
+require('./build/bridge/main.js');
