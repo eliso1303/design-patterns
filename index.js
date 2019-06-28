@@ -1,1 +1,1 @@
-require('./build/prototype/main.js');
+require('./build/behavioral/strategy/main.js');

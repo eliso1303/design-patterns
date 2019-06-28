@@ -3,7 +3,6 @@ import { InstanceType } from "./interfaces"
 class Person {
     static instance: InstanceType;
     constructor() {
-        // do we have it or not
         if (Person.instance) {
             return Person.instance;
         }
