@@ -1,42 +1,43 @@
-class Tax {
-    overThousand: any;
+// import { OverThousandType } from "./interfaces"
 
-    calc(value: number) {
-        if (value >= 1000)
-            value = this.overThousand(value);
+// class Tax {
+//     overThousand: OverThousandType;
 
-        return this.complementaryFee(value);
-    }
+//     calc(value: number) {
+//         if (value >= 1000)
+//             value = this.overThousand(value);
 
-    complementaryFee(value: number) {
-        return value + 10;
-    }
+//         return this.complementaryFee(value);
+//     }
 
-}
+//     complementaryFee(value: number) {
+//         return value + 10;
+//     }
+// }
 
-class Tax1 extends Tax {
+// class Tax1 extends Tax {
 
-    constructor() {
-        super();
-    }
+//     constructor() {
+//         super();
+//     }
 
-    overThousand(value: number) {
-        return value * 1.1;
-    }
-}
+//     overThousand(value: number) {
+//         return value * 1.1;
+//     }
+// }
 
-class Tax2 extends Tax {
+// class Tax2 extends Tax {
 
-    constructor() {
-        super();
-    }
+//     constructor() {
+//         super();
+//     }
 
-    overThousand(value: number) {
-        return value * 1.2;
-    }
-}
+//     overThousand(value: number) {
+//         return value * 1.2;
+//     }
+// }
 
-export {
-    Tax1,
-    Tax2
-};
+// export {
+//     Tax1,
+//     Tax2
+// };

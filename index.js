@@ -1,1 +1,1 @@
-require('./build/behavioral/strategy/main.js');
+require('./build/behavioral/visitor/main.js');
